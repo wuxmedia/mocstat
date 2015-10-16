@@ -4,9 +4,9 @@ for ((;;))
 do
 if [ "$(pidof mocp)" ]
 then
-  wget -q -O - "http://store.wuxmedia.com/aeB3yoht.php?music=$(mocp -Q %title | sed "s/&/and/")" 
+  wget -q -O - "http://domain.com/random.php?music=$(mocp -Q %title | sed "s/&/and/")" 
   else 
- wget -q -O - http://store.wuxmedia.com/aeB3yoht.php?music=" "
+ wget -q -O - http://domain.com/random.php?music=" "
 fi
 sleep 3s
 done

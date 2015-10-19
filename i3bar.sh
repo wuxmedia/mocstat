@@ -4,5 +4,5 @@
 i3status | while :
  do
   read line
-  echo "$(wget -q -O - http://domain.com/random.txt && mocp -Q %title ) | $line" || exit 1
+  echo -e "$(wget -q -O - http://domain.com/random.txt && mocp -Q %title ) | $line" || exit 1
  done

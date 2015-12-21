@@ -1,8 +1,8 @@
 #!/bin/bash
-# music push?
+# music push
 for ((;;))
 do
-if [ "$(pidof mocp)" ]
+if [ $(mocp -Q %state) == "PLAY" ]
 then
   wget -q -O - "http://domain.com/random.php?music=$(mocp -Q %title | sed "s/&/and/")" 
   else 

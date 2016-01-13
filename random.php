@@ -1,5 +1,5 @@
 <?php
-$file = "/home/store/public_html/aeB3yoht.txt";
+$file = "/home/store/public_html/random.txt";
 $sent_string = htmlspecialchars($_GET["music"]);
 if($sent_string){
    $something = fopen($file, "w") or die("something went horribly wrong writing");    

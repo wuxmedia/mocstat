@@ -9,3 +9,10 @@ I aliased mocpsuh.sh on the end of mocp
 Best to run like:
 
     ./mocpush.sh >/dev/null 2>&1 & 
+
+
+So mocp is playing on my RPi. the mocpush runs on the RPi. 
+
+It dumps it on my server running random.php, over a wget, (yeah GET can push - who'da thunkit?)
+
+i3bar.sh reads it off the secret url
